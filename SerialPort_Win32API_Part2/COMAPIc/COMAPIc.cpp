@@ -50,11 +50,12 @@
 
 		//data com port	
 	HANDLE HWNDCOM;
-	LPCTSTR lpNumCOM="COM1:";
-	LPCTSTR COMSETTING="Com1: baud=1200 parity=N data=8 stop=1";
+	LPCTSTR lpNumCOM="COM3:";
+	LPCTSTR COMSETTING="Com3: baud=4800 parity=M data=8 stop=1";
 	char Buf[255];
 	DWORD LenBuf;
 	DCB DCB1;
+	COMMTIMEOUTS ct = { 0 };
 
 	
 LRESULT CALLBACK	WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -152,6 +153,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 									MessageBox(0,lpERR2,lpCapERR,0);
 								}
 							Retval=SetCommState(HWNDCOM,&DCB1);
+							if (Retval==0)	//error SetCom
+								{
+									Mem1= GetLastError();
+									wsprintf(&lpERR3[23],Par1,Mem1);
+									MessageBox(0,lpERR3,lpCapERR,0);
+								}
+							ct.ReadTotalTimeoutConstant = 10 * 1000;
+							Retval = SetCommTimeouts(HWNDCOM, &ct);
 							if (Retval==0)	//error SetCom
 								{
 									Mem1= GetLastError();

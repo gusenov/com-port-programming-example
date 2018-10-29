@@ -10,3 +10,11 @@
 - [fgets, fgetws](https://msdn.microsoft.com/en-us/library/c37dh6kf.aspx)
 - [strcspn, wcscspn, _mbscspn, _mbscspn_l](https://msdn.microsoft.com/en-us/library/xe8sk0x7.aspx)
 - [c - Displaying wide chars with printf - Stack Overflow](https://stackoverflow.com/questions/40590207/displaying-wide-chars-with-printf)
+
+- [Building on the Command Line](https://msdn.microsoft.com/en-us/library/f35ctcxw.aspx?f=255&MSPPError=-2147217396)
+- [MSBuild (Visual C++)](https://msdn.microsoft.com/en-us/library/dd293626.aspx)
+- [Walkthrough: Using MSBuild to Create a Visual C++ Project](https://msdn.microsoft.com/en-us/library/dd293607.aspx)
+- [Бит чётности — Википедия](https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D1%82_%D1%87%D1%91%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8)
+- [www.ПЕРВЫЕ ШАГИ.ru :: Шаг 92 - Структура DCB](http://www.firststeps.ru/mfc/winapi/r.php?92)
+- [serial port - What is the difference between using mark/space parity and parity none? - Stack Overflow](https://stackoverflow.com/questions/13953095/what-is-the-difference-between-using-mark-space-parity-and-parity-none)
+
